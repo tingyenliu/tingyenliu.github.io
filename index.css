@@ -1,0 +1,144 @@
+aside {
+    background-image: url('assets/01.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 600px;
+}
+
+aside>h1 {
+    padding: 200px 50px 20px;
+    font-size: 250%;
+    color: white;
+    text-shadow: 3px 3px 0 #787878;
+    font-family: monospace;
+}
+
+aside>p {
+    padding: 0 50px;
+    color: white;
+    font-size: 150%;
+    font-weight: bolder;
+}
+
+section.top {
+    content: "";
+    display: block;
+    padding-top: 200px;
+}
+
+section.top>h1 {
+    display: none;
+}
+
+section.top>p {
+    display: none;
+}
+
+section.pic {
+    border: 20px solid transparent;
+    float: left;
+    width: 33.3%;
+    margin: auto;
+}
+
+section#pi1 {
+    height: 500px;
+}
+
+section#pi2,
+#pi3,
+#pi4,
+#pi5 {
+    height: 250px;
+}
+
+section img:hover {
+    box-shadow: 5px 5px 10px #000;
+    width: 105%;
+    height: 105%;
+}
+
+section a img:hover {
+    box-shadow: 5px 5px 10px #000;
+    width: 105%;
+    height: 105%;
+}
+
+section.bottom {
+    content: "";
+    clear: both;
+    display: block;
+    padding-top: 200px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+    aside {
+        height: 500px;
+    }
+    aside>h1 {
+        font-size: 200%;
+    }
+    aside>p {
+        font-size: 100%;
+    }
+    section.pic {
+        border: 30px solid transparent;
+        width: 50%;
+    }
+    section#pi1 {
+        height: 500px;
+    }
+    section#pi2,
+    #pi3,
+    #pi4,
+    #pi5 {
+        height: 250px;
+    }
+}
+
+@media screen and ( max-width: 599px) {
+    aside {
+        margin-top: 100px;
+        height: 300px;
+    }
+    aside>h1 {
+        display: none;
+    }
+    aside>p {
+        display: none;
+    }
+    section.top {
+        padding: 100px 0 100px 0;
+        text-align: center;
+    }
+    section.top>h1 {
+        color: white;
+        font-size: 170%;
+        padding-bottom: 10px;
+        text-shadow: 0 0 10px #000000;
+        font-family: monospace;
+        display: block;
+    }
+    section.top>p {
+        color: white;
+        text-shadow: 0 0 10px #000000;
+        font-size: 150%;
+        font-weight: bolder;
+        display: block;
+    }
+    section.pic {
+        border: 40px solid transparent;
+        width: 100%;
+        min-width: 100px;
+    }
+    section#pi1 {
+        height: 450px;
+    }
+    section#pi2,
+    #pi3,
+    #pi4,
+    #pi5 {
+        height: 300px;
+    }
+}
