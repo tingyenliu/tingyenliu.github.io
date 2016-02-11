@@ -51,7 +51,13 @@
         background-size: cover;
         margin: 0;
     }
-    
+    @media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .jumbotron {
+        height: 600px;
+
+      }
+    }
+  
     #aboutme {
         text-align: center;
         padding-top: 50px;
@@ -60,11 +66,23 @@
         color: #04080F;
         background-color: #fff;
     }
-    
+    @media only screen and (max-width: 800px) {
+    #aboutme {
+        height: 750px;
+        overflow: hidden;
+ 
+      }
+
+    }
+    #aboutme p{
+        color: #535953;
+        font-size: 90%;
+
+    }
     #aboutme #profile {
         margin: 50px;
-        width: 300px;
-        height: 300px;
+        width: 230px;
+        height: 230px;
         border-radius: 99em;
         border-style: dotted;
         border-width: 1px;
@@ -79,7 +97,7 @@
         line-height: 2em;
         color: #04080F;
         background-color: #DAE3E5;
-        overflow: scroll;
+        overflow: auto;
     }
     
     #introduction .thumbnail {
@@ -134,14 +152,22 @@
         height: 500px;
     }
     
-    @media only screen and (max-width: 670px) {
-        /* For mobile phones: */
+    @media only screen and (min-width: 451px) and (max-width: 670px) {
         #myCarousel img {
             width: 450px;
             height: 300px;
         }
         #scenery {
             height: 550px;
+        }
+    }
+   @media only screen and (max-width: 450px) {
+        #myCarousel img {
+            width: 250px;
+            height: 250px;
+        }
+           #scenery {
+            height: 500px;
         }
     }
     
@@ -189,7 +215,7 @@
         position: relative;
         float: left;
         margin: 0 2px;
-        overflow: hidden;
+        overflow: auto;
     }
     
     #food img {
@@ -226,14 +252,12 @@
         display: none;
     }
     
-    @media only screen and (max-width: 1000px) {
-        /* For mobile phones: */
+    @media only screen and (min-width: 651px) and (max-width: 1000px) {
         #food .box {
             display: inline-block;
             vertical-align: middle;
             content: "";
             clear: both;
-            display: block;
         }
         #food .space {
             display: inline-block;
@@ -248,16 +272,15 @@
     @media only screen and (max-width: 650px) {
         /* For mobile phones: */
         #food .space {
-            display: inline-block;
-            vertical-align: middle;
-            content: "";
-            clear: both;
-            display: block;
-            padding: 0;
-            background-color: #DAE3E5;
+            display: none;
         }
         #food {
             height: 1700px;
+         overflow: hidden;
+        }
+        #food .row {  
+           background: #DAE3E5;
+           width: 100%;
         }
     }
     
