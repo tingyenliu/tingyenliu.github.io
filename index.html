@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!--讓IE用最新的標準檢視網頁-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--寬度是裝置的寬度縮放比例為1:1-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Trip in Busan</title>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    * {
+        box-sizing: border-box;
+        -webkit- box-sizing: border-box;
+        -moz- box-sizing: border-box;
+    }
+    
+    body {
+        position: relative;
+        font-size: 20px;
+        font-family: Montserrat, cursive;
+    }
+    
+    h2 {
+        padding-bottom: 50px;
+    }
+    /* start navbar */
+    
+    .navbar {
+        background-color: transparent;
+        border-color: transparent;
+    }
+    
+    .navbar:hover {
+        background-color: #90A8C3;
+    }
+    
+    .navbar a {
+        letter-spacing: 4px;
+        /* text */
+    }
+    
+    .navbar-brand {
+        font-size: 25px;
+    }
+    
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+        color: #fff !important;
+        background-color: #90A8C3 !important;
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .navbar a {
+            letter-spacing: 1px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .navbar {
+            background-color: #90A8C3;
+        }
+    }
+    /* end navbar */
+    /* start jumbotron */
+    
+    .jumbotron {
+        color: #535953;
+        text-align: center;
+        padding: 150px 25px;
+        background-image: url('pic/background.JPG');
+        height: 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .jumbotron {
+            padding: 100px 25px;
+            height: 500px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        .jumbotron {
+            padding: 100px 25px;
+            height: 400px;
+        }
+        .jumbotron p {
+            visibility: hidden;
+            /* text */
+        }
+    }
+    /* end jumbotron */
+    /* start aboutme */
+    
+    #aboutme {
+        text-align: center;
+        padding-top: 100px;
+        height: 700px;
+        line-height: 2em;
+    }
+    
+    #aboutme1 {
+        margin-top: 100px;
+        font-style: italic;
+    }
+    
+    #aboutme2 {
+        margin-top: 50px;
+    }
+    
+    #aboutme #profile {
+        width: 230px;
+        height: 230px;
+        border-radius: 99em;
+        border-style: dotted;
+        border-width: 1px;
+        border-color: #000;
+        /* picture */
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #aboutme {
+            height: 800px;
+        }
+        #aboutme1 {
+            margin-top: 0px;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #aboutme {
+            height: 900px;
+            font-size: 75%;
+        }
+        #aboutme1 {
+            margin-top: 0px;
+        }
+        #aboutme2 {
+            margin-top: 100px;
+        }
+    }
+    /* end aboutme */
+    /* start introduction */
+    
+    #introduction {
+        text-align: center;
+        padding-top: 100px;
+        height: 1000px;
+        line-height: 2em;
+        color: #04080F;
+        background-color: #DAE3E5;
+        overflow: auto;
+    }
+    
+    #introduction .text {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    #introduction .pic {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    
+    #introduction p {
+        color: #535953;
+    }
+    
+    #introduction .title {
+        color: #04080F;
+    }
+    
+    #introduction .intro {
+        box-shadow: 5px 0 60px #04080F;
+        max-width: 100%;
+        height: auto;
+        /* picture */
+    }
+    
+    .glyphicon-heart {
+        color: #E16B8C;
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #introduction h2 {
+            padding-bottom: 20px;
+        }
+        #introduction .pic {
+            text-align: center;
+        }
+        #introduction .intro {
+            width: 400px;
+            height: auto;
+            /* picture */
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #introduction h2 {
+            padding-bottom: 20px;
+        }
+        #introduction p {
+            font-size: 80%;
+        }
+        #introduction .pic {
+            text-align: center;
+        }
+        #introduction .intro {
+            width: 300px;
+            height: auto;
+            /* picture */
+        }
+    }
+    /* end introduction */
+    /* start scenery */
+    
+    #scenery {
+        padding-top: 100px;
+        text-align: center;
+        height: 700px;
+        color: #04080F;
+        background-color: #fff;
+    }
+    
+    #scenery .scene {
+        padding: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    #myCarousel img {
+        width: 650px;
+        height: 500px;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #myCarousel img {
+            width: 300px;
+            height: 250px;
+        }
+        #scenery {
+            height: 500px;
+        }
+    }
+    
+    #scenery .scene {
+        padding: 20px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .carousel-indicators li {
+        border-color: #B28FCE;
+    }
+    
+    .carousel-indicators li.active {
+        background-color: #B28FCE;
+    }
+    
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+        color: #B28FCE;
+    }
+    
+    .carousel-control.right,
+    .carousel-control.left {
+        background-image: none;
+    }
+    /* end scenery */
+    /* start food*/
+    
+    #food {
+        text-align: center;
+        padding-top: 80px;
+        height: 800px;
+        line-height: 2em;
+        color: #04080F;
+        background-color: #DAE3E5;
+    }
+    
+    #food h2 {
+        padding-bottom: 20px;
+    }
+    
+    #food .row {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px;
+    }
+    
+    #food .box {
+        width: 300px;
+        height: 250px;
+        position: relative;
+        float: left;
+        margin: 0 2px;
+        overflow: hidden;
+    }
+    
+    #food img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .animate:hover .details {
+        margin-left: 0px;
+    }
+    
+    .details {
+        cursor: crosshair;
+        color: #fff;
+        font-size: 20px;
+        width: 270px;
+        height: 203px;
+        background-color: #1B98E0;
+        padding: 25px;
+        text-align: center;
+        opacity: 0.8;
+        filter: alpha(opacity=8);
+        position: absolute;
+        top: 0;
+        left: -10;
+        margin-left: -500px;
+        -webkit-transition: margin-left 250ms ease-in;
+        -moz-transition: margin-left 250ms ease-in;
+        -ms-transition: margin-left 250ms ease-in;
+        transition: margin-left 250ms ease-in;
+    }
+    
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #food {
+            height: 1000px;
+        }
+        #food .box {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            clear: both;
+        }
+    }
+    
+    @media only screen and (max-width: 767px) {
+        #food {
+            height: 900px;
+            overflow: auto;
+        }
+        #food h2 {
+            padding-bottom: 50px;
+        }
+        #food .row {
+            width: 280px;
+            margin: 0;
+        }
+        #food .box {
+            width: 280px;
+            height: 230px;
+        }
+        .details {
+            width: 250px;
+            height: 190px;
+        }
+    }
+    /* end food*/
+    /* start footer*/
+    
+    footer {
+        padding-top: 60px;
+        text-align: center;
+        height: 250px;
+        line-height: 3em;
+        color: #04080F;
+    }
+    
+    .glyphicon-chevron-up {
+        color: #B28FCE;
+    }
+    
+    @media only screen and (max-width: 767px) {
+        footer p {
+            font-size: 60%;
+        }
+    }
+    /* end footer*/
+    </style>
+</head>
+
+<body id="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--start navbar-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#index">Vicky's Trip</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#scenery">Scenery</a></li>
+                    <li><a href="#food">Food</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--end navbar-->
+    <!--start jumbotron-->
+    <div class="jumbotron">
+        <div class="container-fluid" style="width:100%">
+            <h1>My Trip in Busan</h1>
+            <p>Check it out!How fun I stayed in Busan</p>
+        </div>
+    </div>
+    <!--end jumbotron-->
+    <!--start main content-->
+    <!--start about me-->
+    <div id="aboutme" class="container-fluid">
+        <div class="row">
+            <h2>About Me</h2>
+            <div id="aboutme1" class="col-sm-12 col-md-6">
+                <p>Hello!I'm Vicky, who come from Taiwan.</p>
+                <p>I don't have much opportunities to travel around.</p>
+                <p>But I enjoy every time when I travel.</p>
+            </div>
+            <div id="aboutme2" class="col-sm-12 col-md-6">
+                <img id="profile" src="pic/profile.JPG">
+            </div>
+        </div>
+    </div>
+    <!--end about me-->
+    <!--start introduction-->
+    <div id="introduction" class="container-fluid">
+        <h2>Introduction</h2>
+        <div class="row">
+            <div class="col-md-8 col-md-push-4 col-sm-12 text">
+                <p class="title">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>Why did you go to Busan?
+                </p>
+                <p>
+                    As I said before, I don't have much opportunities to travel. I was looking for a place where's culture, language are different from us, but I can get there easy.
+                </p>
+                <p>
+                    Korea is not far from Taiwan. The public security is good, and the transportation is convenient. The most important thing is Korean are so kind! I have a good memory when I went to Korea for the first time.
+                </p>
+            </div>
+            <div class="col-md-4 col-md-pull-8 col-sm-12 pic">
+                <img class="intro" src="pic/intro1.JPG">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 col-sm-12 text">
+                <p class="title">
+                    <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>What language did you speak when you were in Busan?
+                </p>
+                <p>At first, I speak English and Japanese for communication. To my surprise, a lot of Korean can speak Chinese, even they are just clerks in convenience store.</p>
+                <p>Sometimes, I encountered some situations that we cannot communicate by languages. I don't know their languages, and they don't speak the languages I speak. Therefore, body language is the best way to communicate.</p>
+            </div>
+            <div class="col-md-4 col-sm-12 pic">
+                <img class="intro" src="pic/intro2.JPG">
+            </div>
+        </div>
+    </div>
+    <!--end introduction-->
+    <!--start scenery-->
+    <div id="scenery" class="container-fluid">
+        <div class="row scene">
+            <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="pic/scene1.JPG" alt="Haeundae">
+                    </div>
+                    <div class="item">
+                        <img src="pic/scene2.JPG" alt="Gamcheon">
+                    </div>
+                    <div class="item">
+                        <img src="pic/scene3.JPG" alt="Geumjeongsanseong Fortress">
+                    </div>
+                    <div class="item">
+                        <img src="pic/scene4.JPG" alt="night view">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--end scenery-->
+    <!--start food-->
+    <div id="food" class="container-fluid">
+        <h2>Food</h2>
+        <div class="row">
+            <div class="col-sm-4 box animate">
+                <img src="pic/food1.JPG" alt="stir-fried octopus">
+                <div class="details">stir-fried octopus</div>
+            </div>
+            <div class="col-sm-4 box animate">
+                <img src="pic/food2.JPG" alt="watery kimchi">
+                <div class="details">watery kimchi </div>
+            </div>
+            <div class="col-sm-4 box animate">
+                <img src="pic/food3.JPG" alt="hangover cure soup">
+                <div class="details">hangover cure soup</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 box animate">
+                <img src="pic/food4.JPG" alt="not spicy pepper">
+                <div class="details">not spicy pepper</div>
+            </div>
+            <div class="col-sm-4 box animate">
+                <img src="pic/food5.JPG" alt="Pork Rice Soup">
+                <div class="details">pork rice soup</div>
+            </div>
+            <div class="col-sm-4 box animate">
+                <img src="pic/food6.JPG" alt="seafood onion pancake">
+                <div class="details">seafood onion pancake</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end food-->
+    <!--end main content-->
+    <!--start footer-->
+    <footer class="container-fluid">
+        <a href="#index" title="TO TOP">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>
+            Copyright © 2016 Vicky Liu. All Rights Reserved.
+        </p>
+    </footer>
+    <!--end footer-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- [if lt IE 9]-->
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <!--[endif]-->
+</body>
+
+</html>
